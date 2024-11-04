@@ -72,7 +72,7 @@ const SignUpPage = () => {
     };
 
     return (
-        <div className="h-[60vh] mt-[20vh] mb-[3vw] bg-gray-100 flex items-center justify-center">
+        <div className="h-[60vh] mt-[12vw] mb-[4vw] bg-gray-100 flex items-center justify-center">
             <div className="bg-white p-8 rounded-lg shadow-lg w-full max-w-md">
                 <h2 className="text-2xl font-montserrat font-bold mb-6 text-center">
                     Sign Up
@@ -85,7 +85,7 @@ const SignUpPage = () => {
                         </label>
                         <input
                             type="Name"
-                            className="w-full px-4 font-montserrat py-2 border-2 border-btn rounded-full"
+                            className="w-full px-4 font-montserrat py-2 border-2 border-gray-300 focus:border-btn rounded-full"
                             placeholder="Enter your Name"
                             value={name}
                             onChange={(el) => setName(el.target.value)}
@@ -98,7 +98,7 @@ const SignUpPage = () => {
                         </label>
                         <input
                             type="email"
-                            className="w-full font-montserrat px-4 py-2 border border-btn rounded-full"
+                            className="w-full font-montserrat px-4 py-2 border-2 border-gray-300 focus:border-btn rounded-full"
                             placeholder="Enter your email"
                             value={email}
                             onChange={(el) => setEmail(el.target.value)}
@@ -111,7 +111,7 @@ const SignUpPage = () => {
                         </label>
                         <input
                             type="password"
-                            className="w-full font-montserrat px-4 py-2 border border-btn rounded-full"
+                            className="w-full font-montserrat px-4 py-2 border-2 border-gray-300 focus:border-btn rounded-full"
                             placeholder="Enter your password"
                             value={password}
                             onChange={(el) => setPassword(el.target.value)}
@@ -125,7 +125,7 @@ const SignUpPage = () => {
                         <div className="relative">
                             <input
                                 type={`${confirmPasswordShow ? "text" : "password"}`}
-                                className="w-full font-montserrat px-4 py-2 border border-btn rounded-full"
+                                className="w-full font-montserrat px-4 py-2 border-2 border-gray-300 focus:border-btn rounded-full"
                                 placeholder="Confirm your password"
                                 value={confirmPassword}
                                 onChange={(el) => setConfirmPassword(el.target.value)}
@@ -135,9 +135,9 @@ const SignUpPage = () => {
                                 className="absolute cursor-pointer top-[50%] -translate-y-[50%] right-5"
                             >
                                 {confirmPasswordShow ? (
-                                    <FaRegEyeSlash className="text-btn text-2xl" />
+                                    <FaRegEyeSlash className="text-gray-400  text-2xl" />
                                 ) : (
-                                    <FaRegEye className="text-btn text-2xl" />
+                                    <FaRegEye className="text-gray-400  text-2xl" />
                                 )}
                             </div>
                         </div>
@@ -149,7 +149,7 @@ const SignUpPage = () => {
                         <input
                             type="file"
                             onChange={handleImageFileChange}
-                            className="w-full p-2 border-2 font-montserrat border-btn rounded-lg px-3"
+                            className="w-full p-2 border-2 font-montserrat-2 border-gray-300 active:border-btn focus:border-btn rounded-lg px-3"
                             accept="image/*"
                             disabled={imageUrl !== ""}
                         />
@@ -157,7 +157,7 @@ const SignUpPage = () => {
 
                     <button
                         type="submit"
-                        className="w-full font-montserrat bg-btn text-white py-2 rounded-full "
+                        className="w-full font-montse-2rrat bg-btn text-white py-2 rounded-full "
                     >
                         {loading ? "Loading..." : " Sign Up"}
                     </button>

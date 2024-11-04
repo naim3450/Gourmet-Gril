@@ -30,7 +30,7 @@ const LoginPage = () => {
         }
     };
     return (
-        <div className="h-[60vh] mt-[10vh] bg-gray-100 flex items-center justify-center">
+        <div className="h-[60vh] mt-[13vh] bg-gray-100 flex items-center justify-center">
             <div className="bg-white p-8 rounded-lg shadow-lg w-full max-w-md">
                 <h2 className="text-2xl font-bold mb-6 text-center">Login</h2>
                 <form onSubmit={handleLogin}>
@@ -40,7 +40,7 @@ const LoginPage = () => {
                         </label>
                         <input
                             type="email"
-                            className="w-full font-montserrat px-4 py-2 border border-btn rounded-full"
+                            className="w-full font-montserrat px-4 py-2  border-2 border-gray-300 focus:border-btn rounded-full"
                             placeholder="Enter your email"
                             value={email}
                             onChange={(el) => setEmail(el.target.value)}
@@ -52,7 +52,7 @@ const LoginPage = () => {
                         </label>
                         <input
                             type="password"
-                            className="w-full font-montserrat px-4 py-2 border border-btn rounded-full"
+                            className="w-full font-montserrat px-4 py-2  border-2 border-gray-300 focus:border-btn rounded-full"
                             placeholder="Enter your password"
                             value={password}
                             onChange={(el) => setPassword(el.target.value)}

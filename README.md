@@ -1,8 +1,18 @@
-# React + Vite
+# Gourmet-Grill 🍽️
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to the Gourmet-Grill-Team project! This application is designed to help restaurant owners manage their establishments efficiently while providing a delightful experience for their customers.
 
-Currently, two official plugins are available:
+## Table of Contents
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+## Features
+- **🔒 User Authentication**: Secure sign-up and login features for customers and restaurant owners.
+- **🍽️ Menu Browsing**: Users can view detailed menus from various restaurants.
+- **📦 Order Management**: Place, modify, and track your orders in real-time.
+- **📱 Responsive Design**: Optimized for both desktop and mobile devices.
+
+
+## Technologies Used
+
+- **👨‍💻 Frontend**: HTML, CSS, React.js, Context Api
+- **🔐 Authentication**: Firebase

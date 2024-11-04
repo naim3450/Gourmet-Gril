@@ -38,16 +38,15 @@ const ReviewCard = ({ src, name, text, ratingVal }) => {
                 </h3>
             </div>
 
-            <p className="pt-2 h-[10vw] overflow-hidden font-montserrat font-normal text-base text-prh max-w-[380px] leading-6">
+            <p className="pt-2 h-[10vw] px-2 overflow-hidden font-montserrat font-normal text-base text-prh max-w-[380px] leading-6">
                 {
-                    text ? text.slice(0, 220) + "..." :
-                        ` Lorem ipsum dolor sit amet consectetur. Tortor massa nisl
+                    text ? text.slice(0, 230) + "......" :
+                        `Lorem ipsum dolor sit amet consectetur. Tortor massa nisl
                 quam sit. Vitae congue ultrices neque penatibus mi in
                 quisque. Leo in cursus enim magnis ante. Proin iaculis
                 platea ipsum sagittis ac eu aliquam quis. Ornare tincidunt
                 tempus semper`
                 }
-
             </p>
         </div>
     )
