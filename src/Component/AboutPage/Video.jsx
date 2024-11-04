@@ -35,7 +35,7 @@ const Video = () => {
       })
       : gsap.to("#video", {
         opacity: 1,
-        zIndex: 100000,
+        zIndex: 999,
       }) &&
       gsap.to("#video2", {
         opacity: 0,
