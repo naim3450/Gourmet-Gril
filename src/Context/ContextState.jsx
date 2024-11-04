@@ -532,10 +532,10 @@ const ContextState = ({ children }) => {
   // CloseCart end
 
   // handleCheckout start
-  const handleCheckout = (id, quantity, Variation) => {
+  const handleCheckout = (id, quantity, Variation, price) => {
     dispatch({
       type: "handleCheckout",
-      payload: { id, quantity, Variation }
+      payload: { id, quantity, Variation, price }
     })
   }
 
