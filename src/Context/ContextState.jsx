@@ -423,10 +423,10 @@ const ContextState = ({ children }) => {
   // AddcartPopUp part end
 
   // addToCart part start
-  const addToCart = (id, quantity, Variation) => {
+  const addToCart = (id, quantity, Variation, price) => {
     dispatch({
       type: "addToCart",
-      payload: { id, quantity, Variation }
+      payload: { id, quantity, Variation, price }
     });
 
     setTimeout(() => {
